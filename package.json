@@ -1,0 +1,37 @@
+{
+  "name": "employee",
+  "version": "1.0.0",
+  "description": "Nodejs,Mysql Crud API",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon --exec babel-node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vahapgencdal/nodejs_mysql_crud_api.git"
+  },
+  "keywords": [
+    "Nodejs",
+    "MYSQL",
+    "CRUD"
+  ],
+  "author": "Vahap Gencdal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vahapgencdal/nodejs_mysql_crud_api.git/issues"
+  },
+  "homepage": "https://github.com/vahapgencdal/nodejs_mysql_crud_api#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15",
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.0",
+    "@babel/node": "^7.16.0",
+    "@babel/preset-env": "^7.16.4"
+  }
+}
