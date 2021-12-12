@@ -95,7 +95,7 @@ EmployeeDao.updateById = (id, employee, result) => {
   };
 
   EmployeeDao.remove = (id, result) => {
-    sql.query("DELETE FROM employees WHERE id = ?", id, (err, res) => {
+    connection.query("DELETE FROM employees WHERE id = ?", id, (err, res) => {
       if (err) {
         console.log("error: ", err);
         result(null, err);
@@ -114,7 +114,7 @@ EmployeeDao.updateById = (id, employee, result) => {
   };
   
   EmployeeDao.removeAll = result => {
-    sql.query("DELETE FROM employees", (err, res) => {
+    connection.query("DELETE FROM employees", (err, res) => {
       if (err) {
         console.log("error: ", err);
         result(null, err);
