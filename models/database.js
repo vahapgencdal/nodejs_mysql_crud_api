@@ -9,4 +9,4 @@ var connection = mysql.createPool({
     port:dbConfig.PORT
 });
 
-export default connection;
+module.exports=connection;

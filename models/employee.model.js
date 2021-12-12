@@ -11,9 +11,9 @@ const EmployeeDao = function(employee) {
     this.promoted = employee.promoted;
   };
 
-  EmployeeDao.findById = (id, result)=>{
+EmployeeDao.findById = (id, result)=>{
     //if there is many parameters : var params  = {id: 1, title: 'Hello MySQL'}; --> pass params to query
-    connection.query(`SELECT * FROM employees WHERE id = ?`, {id}, (err, res)=>{
+    connection.query(`SELECT * FROM employees WHERE id = ?`, id, (err, res)=>{
         if (err) {
             console.log("error: ", err);
             result(err, null);
@@ -126,4 +126,4 @@ EmployeeDao.updateById = (id, employee, result) => {
     });
   };
 
-export default EmployeeDao;
+module.exports= EmployeeDao;
